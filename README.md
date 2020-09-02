@@ -1,6 +1,10 @@
 # TEB-Aplikacje-Desktopowe-i-Mobilne
 Repozytorium dla przedmiotu Aplikacje Desktopowe i Mobilne Technikum TEB we Wrocławiu
 
+## Przydatne linki
+
+https://learnxinyminutes.com/docs/python/
+
 ## Zasady
 
 1. Pod koniec każdych zajęć zależnie od postępu grupy zostaną zadane zadania domowe, których czas wykonania dla osoby będącej na zajęciach nie powinien przekroczyć pół godziny.
