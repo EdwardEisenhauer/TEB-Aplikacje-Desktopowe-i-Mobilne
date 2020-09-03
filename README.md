@@ -16,20 +16,20 @@ https://learnxinyminutes.com/docs/python/
 7. Google is your friend.
 
 ## Zajęcia i Zadania
+Poniższe punkty nakreślają informacje i umiejętności, które należy opanować.
 
 ### 0. Omówienie semestru
-  - języki obiektowe
-  - kompialtor
-  - wybór motywu przewodniego projektu zaliczeniowego
+W trakcie semestru będziemy korzystali z pythona w wersji 3.8: https://www.python.org/downloads/
  
 ### 1. Powtórzenie podstaw algorytmiki oraz wprowadzenie do składni języka
-  - algorytmika
-  - pętle
-  - funkcje
-  - obiekty
-  - typy danych
+ - Czym jest algorytm?
+ - Podstawowe operatory matematyczno-logiczne: ```+, -, /, *, **, ==, !```.
+ - Schematy blokowe.
+ - Typy danych.
   
 ### 2. Operacje wejścia i wyjścia
+ - Podstawowe funkcje IO (Input/Output): ```print(), input()```.
+ - 
 
 ### 3. Przechowywanie danych w pamięci
 
