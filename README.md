@@ -38,3 +38,19 @@ W trakcie semestru będziemy korzystali z pythona w wersji 3.8: https://www.pyth
 ### 
 
 ### 15. Wystawienie ocen i omówienie semestru
+
+## Zadanie Projektowe
+
+### Wymagania
+ - Propozycja projektu
+   - Opis projektu
+   - Opis problemów algorytmicznych
+   - Schemat blokowy programu
+   - UML klas
+ - Wersja alfa
+   - Proof of concept
+ - Wersja beta
+   - Testy
+   - PEP 8
+ - Wersja końcowa
+   - Dokumentacja
