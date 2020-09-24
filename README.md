@@ -25,9 +25,13 @@ W trakcie semestru będziemy korzystali z pythona w wersji 3.8: https://www.pyth
  - Czym jest algorytm?
  - Podstawowe operatory matematyczno-logiczne: ```+, -, /, *, **, ==, !```.
  - Schematy blokowe.
- - Typy danych.
+
+### 2. Typy danych
+ - int, float, string, bool
+ - listy (append(), insert())
+ - słowniki
   
-### 2. Operacje wejścia i wyjścia
+### 3. Operacje wejścia i wyjścia
  - Podstawowe funkcje IO (Input/Output): ```print(), input()```.
  - 
 
