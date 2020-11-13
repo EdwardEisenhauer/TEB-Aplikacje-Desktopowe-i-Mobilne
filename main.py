@@ -1,29 +1,26 @@
 def load_image(filename):
-    image = {   "type": "P1",
-                "comment": "komentarz",
-                "size": [2, 3],
-                "pixels": [ [1, 0], 
-                            [0, 1],
-                            [0, 1]]
-            }
-    # Otworzyć plik
-    # Wczytać nagłówki do odpowiednich stron słownika
-    # Na podstawie rozmiaru wczytać piksele
+    infile = open(filename, "r")
+    instr = infile.read().split('\n')
+    image["type"] = instr.pop(0)
+    if image["comment"]:
+        image["comment"] = instr.pop(0)
+    image["size"] = list(map(int, instr.pop(0).split(' ')))
+    for row in instr:
+        image["pixels"].append(list(map(int, row.split(' '))))
     return image
 
 
 def generate_square(size, colour=True):
-    image = {   "type": "P1",
-                "comment": "",
-                "size": [],
-                "pixels": []
-            }
-    # przypisz rozmiar [n, n]
-    # wygeneruj kwadrat
-        # dla n wierszy
-            # dodaj n 0/1 (w zależności od colour) do wiersza (listy)
-            # zapisz wiersz
-
+    image = {}
+    image["type"] = "P1"
+    image["size"] = [size, size]
+    image["comment"] = ''
+    image["pixels"] = []
+    for row in range(size):
+        line = []
+        for col in range(size):
+            line.append(1)
+        image["pixels"].append(line)
     return image
 
 
@@ -47,19 +44,11 @@ def save_image(filename, image):
     outfile = open(filename, "w+")  # Open a filename in a write mode
     outfile.write(image["type"] + "\n")
     if image["comment"]:
-        outfile.write(image["comment"] + "\n")  # Add comment if there is any
+        outfile.write("# " + image["comment"] + "\n")  # Add comment if there is any
     outfile.write(' '.join(list(map(str, image["size"]))) + '\n')   # Change ints to strs and join them with spaces
     for row in image["pixels"]:
         outfile.write(' '.join(list(map(str, row))) + '\n') # Change ints to strs and join them with spaces
 
-# print(generate_square(3, True))
-image = {   "type": "P1",
-                "comment": "komentarz",
-                "size": [2, 3],
-                "pixels": [ [1, 0], 
-                            [0, 1],
-                            [0, 1]]
-            }
-
-# image = load_image("nazwa_pliku")
-save_image("test.pgm", image)
+image = generate_square(3, True)
+# image = load_image("test.pgm")
+save_image("black.pgm", image)
